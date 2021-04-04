@@ -1,0 +1,26 @@
+
+.footer {
+    align-items: center;
+    border-top: 1px solid rgba(225,225,226, 0.8);    ;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-top: 20px;
+    height: 80px;
+}
+
+.footer .logo {
+    order: 2;
+    opacity: 0.5;
+    flex-basis: auto;
+    flex-grow: 1;
+    text-align: right;
+    margin-right: 140px;
+}
+
+.footer .info {
+    color: #444444;
+    order: 1;
+    flex-grow: 1;
+    margin-left: 150px;
+}
