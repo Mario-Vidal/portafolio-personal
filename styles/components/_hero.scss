@@ -3,3 +3,12 @@
     background-color: #2A8FBD;
     height: 350px;
 }
+
+
+@media (max-width: 360px) {
+
+    .hero {
+        height: 250px;
+    }
+    
+}

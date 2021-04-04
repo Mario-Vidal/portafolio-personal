@@ -10,7 +10,6 @@
 }
 
 .footer .logo {
-    order: 2;
     opacity: 0.5;
     flex-basis: auto;
     flex-grow: 1;
@@ -20,7 +19,20 @@
 
 .footer .info {
     color: #444444;
-    order: 1;
     flex-grow: 1;
     margin-left: 150px;
+}
+
+
+
+@media (max-width: 360px) {
+
+    .footer .logo {
+        margin-right: 10px;
+    }
+    
+    .footer .info {
+        margin-left: 10px;
+    }
+    
 }
