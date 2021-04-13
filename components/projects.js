@@ -1,12 +1,13 @@
 import styles from '../styles/Home.module.scss'
 
+
 export default function Projects() {
     return (
         <main className={styles.main}>
             <div className={styles.projects}>
                 <article className={styles.project}>
                     <div className={styles.img}>
-                        <img src="http://placehold.jp/250x180.png" />
+                        <img src="/placeholder.svg" />
                     </div>
                     <div className={styles.info}>
                         <a href="#">Proyecto 1</a>
@@ -16,7 +17,7 @@ export default function Projects() {
 
                 <article className={styles.project}>
                     <div className={styles.img}>
-                        <img src="http://placehold.jp/250x180.png" />
+                        <img src="/placeholder.svg" />
                     </div>
                     <div className={styles.info}>
                         <a href="#">Proyecto 2</a>
@@ -26,7 +27,7 @@ export default function Projects() {
 
                 <article className={styles.project}>
                     <div className={styles.img}>
-                        <img src="http://placehold.jp/250x180.png" />
+                        <img src="/placeholder.svg" />
                     </div>
                     <div className={styles.info}>
                         <a href="#">Proyecto 3</a>
@@ -36,7 +37,7 @@ export default function Projects() {
 
                 <article className={styles.project}>
                     <div className={styles.img}>
-                        <img src="http://placehold.jp/250x180.png" />
+                        <img src="/placeholder.svg" />
                     </div>
                     <div className={styles.info}>
                         <a href="#">Proyecto 4</a>
@@ -46,7 +47,7 @@ export default function Projects() {
 
                 <article className={styles.project}>
                     <div className={styles.img}>
-                        <img src="http://placehold.jp/250x180.png" />
+                        <img src="/placeholder.svg" />
                     </div>
                     <div className={styles.info}>
                         <a href="#">Proyecto 5</a>
@@ -56,7 +57,7 @@ export default function Projects() {
 
                 <article className={styles.project}>
                     <div className={styles.img}>
-                        <img src="http://placehold.jp/250x180.png" />
+                        <img src="/placeholder.svg" />
                     </div>
                     <div className={styles.info}>
                         <a href="#">Proyecto 6</a>
