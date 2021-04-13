@@ -7,7 +7,7 @@ export default function Navbar() {
                 <h1>Mario Vidal</h1>
             </div>
 
-            <div className={styles.menu}>
+            <nav className={styles.menu}>
                 <ul>
                     <li>
                         <a href="#">Inicio</a>
@@ -19,7 +19,7 @@ export default function Navbar() {
                         <a href="#">Contacto</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </header>
     )
 }

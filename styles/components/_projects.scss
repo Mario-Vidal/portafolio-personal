@@ -1,21 +1,28 @@
-
+.main {
+    display: grid;
+    grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+    grid-gap: 40px;
+    padding: 60px 0;
+}
 .projects {
-    display: flex;
-    flex-basis: 80%;
-    flex-flow: row wrap;
-    padding-top: 30px;
-    padding-left: 150px;
-    padding-right: 100px;
-    justify-content: space-between;
+    display: grid;
+    grid-column: 2 / span 12;
+    grid-template-columns: repeat(12, minmax(auto, 60px));
+    grid-gap: 40px;
 }
 
 .project {
-    border: 1px solid #cccccc;
-    margin-bottom: 30px;
-    margin-right: 50px;
-    flex-basis: 300px;
-    flex-grow: 1;
-    width: 250px;
+    display: flex;
+    background-color: #ffffff;
+    border: 1px solid #c2c1c1;
+    flex-direction: column;
+    grid-column-end: span 4;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.project:hover {
+    transform: translateY(-8px);
 }
 
 .project img {
@@ -52,15 +59,43 @@
     width: 60px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 1000px) {
+    .project {
+      grid-column-end: span 6;
+    }
+}
 
-    .projects {
-        padding-left: 40px;
-        padding-right: 40px;
+@media (max-width: 700px) {
+    .main {
+        grid-gap: 20px;
     }
 
     .project {
-        margin-right: 0px;
+        grid-column-end: span 12;
     }
-    
 }
+
+@media (max-width: 500px) {
+    .main {
+        grid-template-columns: 10px repeat(6, 1fr) 10px;
+        grid-gap: 10px;
+    }
+    .projects {
+        grid-column: 2 / span 6;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 25px;
+    }
+    .project {
+        grid-column-end: span 6;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .main {
+        grid-gap: 10px;
+    }
+    .projects {
+        grid-gap: 20px;
+    }
+} 
