@@ -1,11 +1,14 @@
 
+$breakdown-mobile-m: 375px;
+
+$royale-blue: #2A8FBD;
+
 .hero {
-    background-color: #2A8FBD;
+    background-color: $royale-blue;
     height: 350px;
 }
 
-
-@media (max-width: 360px) {
+@media (max-width: $breakdown-mobile-m) {
     .hero {
         height: 250px;
     }

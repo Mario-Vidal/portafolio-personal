@@ -2,9 +2,10 @@
 $breakdown-tablet-l: 650px;
 $breakdown-tablet-s: 500px;
 $breakdown-mobile-l: 425px;
+
 $accent-color: #0088a9;
 $dark-color: #000000;
-
+$dark-grey: #444444;
 
 .header {
     display: flex;
@@ -43,7 +44,7 @@ $dark-color: #000000;
 }
 
 .menu a {
-    color: #444444;
+    color: $dark-grey;
     padding: 20px;
     font-size: 18px;
     transition: all 0.3s ease 0s;

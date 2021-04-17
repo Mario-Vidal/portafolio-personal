@@ -1,7 +1,10 @@
 
+$light-grey: #e1e1e2cc;
+$dark-grey: #444444;
+
 .footer {
     align-items: center;
-    border-top: 1px solid rgba(225,225,226, 0.8);    ;
+    border-top: 1px solid $light-grey;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -14,25 +17,11 @@
     flex-basis: auto;
     flex-grow: 1;
     text-align: right;
-    margin-right: 140px;
+    margin-right: 7%;
 }
 
 .footer .info {
-    color: #444444;
+    color: $dark-grey;
     flex-grow: 1;
-    margin-left: 150px;
-}
-
-
-
-@media (max-width: 360px) {
-
-    .footer .logo {
-        margin-right: 10px;
-    }
-    
-    .footer .info {
-        margin-left: 10px;
-    }
-    
+    margin-left: 7%;
 }
