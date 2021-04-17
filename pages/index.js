@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.scss'
 
 import Navbar from '../components/navbar'
 import Hero from '../components/hero'
-import Projects from '../components/projects'
+import ProjectsList from '../components/ProjectList'
 import Footer from '../components/footer'
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
 
             <Hero />
 
-            <Projects />
+            <ProjectsList />
 
             <Footer />
         </div>
