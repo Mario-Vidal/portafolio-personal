@@ -34,23 +34,5 @@ export const projects = [
         "project_name": "Proyecto 6",
         "project_image": "/placeholder.svg",
         "project_description": "Test"
-    },
-    {
-        "id": 7,
-        "project_name": "Proyecto 7",
-        "project_image": "/placeholder.svg",
-        "project_description": "Test"
-    },
-    {
-        "id": 8,
-        "project_name": "Proyecto 8",
-        "project_image": "/placeholder.svg",
-        "project_description": "Test"
-    },
-    {
-        "id": 9,
-        "project_name": "Proyecto 9",
-        "project_image": "/placeholder.svg",
-        "project_description": "Test"
-    },
+    }
 ];

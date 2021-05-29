@@ -1,11 +1,6 @@
 import styles from '../styles/Home.module.scss'
 
-export default function ProjectCard ({
-    project_image,
-    project_name,
-    project_description
-}) {
-
+export default function ProjectCard ({ project_image, project_name, project_description }) {
     return (
         <article className={styles.project}>
             <div className={styles.img}>

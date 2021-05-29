@@ -6,31 +6,36 @@ $breakdown-mobile-s: 320px;
 
 $black: #000000;
 $white: #ffffff;
-$dark-grey: #444444;
+$dark-grey: #3b3e44;
 $light-color: #c2c1c1;
 $accent-color: #0088a9;
 
 .main {
+    background-color: $white;
     display: grid;
-    grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
     grid-gap: 40px;
+    grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
     padding: 60px 0;
 }
 
 .projects {
     display: grid;
     grid-column: 2 / span 12;
-    grid-template-columns: repeat(12, minmax(auto, 60px));
     grid-gap: 40px;
+    grid-template-columns: repeat(12, minmax(auto, 60px));
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
 }
 
 .project {
-    display: flex;
     background-color: $white;
+    border-radius: 4px;
     border: 1px solid $light-color;
-    flex-direction: column;
-    grid-column-end: span 4;
     cursor: pointer;
+    // display: flex;
+    // flex-direction: column;
+    grid-column-end: span 4;
     transition: all 0.3s ease 0s;
 }
 
@@ -52,7 +57,7 @@ $accent-color: #0088a9;
     transition: all 300ms;
 }
 
-.project .info a:hover {
+.project .info:hover {
     color: $accent-color;
 }
 
@@ -80,13 +85,13 @@ $accent-color: #0088a9;
 
 @media (max-width: $breakdown-tablet-s) {
     .main {
-        grid-template-columns: 10px repeat(6, 1fr) 10px;
         grid-gap: 15px;
+        grid-template-columns: 10px repeat(6, 1fr) 10px;
     }
     .projects {
         grid-column: 2 / span 6;
-        grid-template-columns: repeat(6, 1fr);
         grid-gap: 25px;
+        grid-template-columns: repeat(6, 1fr);
     }
     .project {
         grid-column-end: span 6;

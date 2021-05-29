@@ -6,6 +6,7 @@ import Hero from '../components/hero'
 import ProjectsList from '../components/ProjectList'
 import Footer from '../components/footer'
 
+
 export default function Home() {
     return (
         <div className={styles.container}>
