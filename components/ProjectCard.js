@@ -7,6 +7,7 @@ export default function ProjectCard ({ project_image, project_name, project_desc
                 <img
                     src={ project_image }
                     layout="fill"
+                    objectFit="cover"
                     alt={ project_name }
                 />
             </div>
