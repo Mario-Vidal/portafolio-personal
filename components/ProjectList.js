@@ -4,7 +4,7 @@ import { projects } from '../data/projects'
 
 export default function ProjectsList() {
     return (
-        <main className={styles.main}>
+        <main className={styles.main} id="proyectos">
             <div className={styles.projects}>
                 {
                     projects.map( project => (

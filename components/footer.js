@@ -1,4 +1,6 @@
 import styles from '../styles/Home.module.scss'
+import Link from 'next/link'
+
 
 export default function Footer() {
     return (
@@ -8,7 +10,9 @@ export default function Footer() {
             </div>
 
             <div className={styles.logo}>
-                Portafolio
+                <Link href="#inicio">
+                    <a>Regresar al inicio</a>
+                </Link>                  
             </div>
         </footer>
     )

@@ -1,8 +1,10 @@
 import styles from '../styles/Home.module.scss'
+import Link from 'next/link'
+
 
 export default function Navbar() {
     return (
-        <header className={styles.header}>
+        <header className={styles.header} id="inicio">
             <div className={styles.logo}>
                 <h1>Mario Vidal</h1>
             </div>
@@ -10,10 +12,12 @@ export default function Navbar() {
             <nav className={styles.menu}>
                 <ul>
                     <li>
-                        <a href="#">Inicio</a>
+                        <a href="#inicio">Inicio</a>
                     </li>
                     <li>
-                        <a href="#">Proyectos</a>
+                        <Link href="#proyectos">
+                            <a>Proyectos</a>
+                        </Link>
                     </li>
                     <li>
                         <a href="#">Contacto</a>

@@ -21,54 +21,56 @@ $dark-grey: #3b3e44;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-}
 
-.header .logo {
-    color: $black;
-    margin-right: auto;
-}
+    .logo {
+        color: $black;
+        margin-right: auto;
+    }
 
-.header .logo h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    cursor: pointer;
-}
+    .logo h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        cursor: pointer;
+    }
 
-.header .menu {
-    display: flex;
-    list-style: none;
-    flex-flow: row wrap;
-}
+    .menu {
+        display: flex;
+        list-style: none;
+        flex-flow: row wrap;
+    }
 
-.header .menu > ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-}
+    .menu > ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
 
-.header .menu a {
-    color: $dark-grey;
-    padding: 20px;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    transition: all 0.3s ease 0s;
-}
+    .menu a {
+        color: $dark-grey;
+        padding: 20px;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        transition: all 0.3s ease 0s;
+    }
 
-.header .menu a:hover,
-.header .menu a:focus {
-    color: $accent-color;
+    .menu a:hover,
+    .menu a:focus {
+        color: $accent-color;
+    }
 }
 
 @media (max-width: $breakdown-tablet-l) {
-    .header .logo h1 {
-        font-size: 18px;
-    }
+    .header {
+        .logo h1 {
+            font-size: 18px;
+        }
 
-    .header .menu a {
-        padding: 16px;
-        font-size: 16px;
+        .menu a {
+            padding: 16px;
+            font-size: 16px;
+        }
     }
 }
 
@@ -80,11 +82,14 @@ $dark-grey: #3b3e44;
 }
 
 @media (max-width: $breakdown-mobile-l) {
-    .header .logo h1 {
-        font-size: 20px;
-    }
+    .header {
+        .logo h1 {
+            font-size: 20px;
+        }
 
-    .header .menu a {
-        padding: 14px;
+        .menu a {
+            padding: 14px;
+        }
     }
 }
+
