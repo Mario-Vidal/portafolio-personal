@@ -75,9 +75,9 @@ $accent-color: #0088a9;
         grid-gap: 20px;
     }
 
-    .project {
-        grid-column-end: span 12;
-    }
+    // .project {
+    //     grid-column-end: span 12;
+    // }
 }
 
 @media (max-width: $breakdown-tablet-s) {
@@ -91,7 +91,7 @@ $accent-color: #0088a9;
         grid-template-columns: repeat(6, 1fr);
     }
     .project {
-        grid-column-end: span 6;
+        grid-column-end: span 12;
     }
 }
 
