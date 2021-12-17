@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <div className={styles.container}>
             <Head>
-                <title>Mario Vidal - Portafolio</title>
+                <title>Portafolio - Mario Vidal</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 

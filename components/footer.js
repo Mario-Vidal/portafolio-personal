@@ -1,12 +1,18 @@
 import styles from '../styles/Home.module.scss'
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 export default function Footer() {
     return (
         <footer className={styles.footer}>
             <div className={styles.info}>
-                Creado por: Mario Vidal
+                <Image
+                    src="/footer/icons/github.png"
+                    alt="image-alt-text"
+                    width={40}
+                    height={40}
+                />
             </div>
 
             <div className={styles.logo}>

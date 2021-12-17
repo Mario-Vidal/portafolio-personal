@@ -84,6 +84,7 @@ $dark-grey: #3b3e44;
 @media (max-width: $breakdown-mobile-l) {
     .header {
         height: 110px;
+        padding-right: 10%;
 
         .logo {
             margin-right: 0;
@@ -98,4 +99,3 @@ $dark-grey: #3b3e44;
         }
     }
 }
-
