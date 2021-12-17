@@ -1,6 +1,7 @@
 import styles from '../styles/Home.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
+import githubLogo from '../public/footer/icons/github.png'
 
 
 export default function Footer() {
@@ -8,7 +9,7 @@ export default function Footer() {
         <footer className={styles.footer}>
             <div className={styles.info}>
                 <Image
-                    src="/footer/icons/github.png"
+                    src={githubLogo}
                     alt="image-alt-text"
                     width={40}
                     height={40}
